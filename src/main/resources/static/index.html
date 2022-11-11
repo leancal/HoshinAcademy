@@ -2,368 +2,361 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--========== BOX ICONS ==========-->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!--========== BOX ICONS ==========-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--========== Bootstrap ==========-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--========== Bootstrap ==========-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive landing page</title>
+  <title>Responsive landing page</title>
 </head>
 
 <body>
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-    </a>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+  </a>
 
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#"><img class="nav__logo" src="./assets/img/hoshin-blackLogo.png" alt=""></a>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#"><img class="nav__logo" src="./assets/img/hoshin-blackLogo.png" alt=""></a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
-                    <li class="nav__item"><a href="#decoration" class="nav__link">Decorations</a></li>
-                    <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
+          <li class="nav__item"><a href="#decoration" class="nav__link">Decorations</a></li>
+          <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
 
-                    <li>
-                        <div id="app">
-                            <div class="d-flex">
-
-
-                                <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight"><button class="btn btn-light"
-                                        style="margin-right: 1rem ; ">LogIn
-                                    </button></a>
-                                <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-                                    aria-controls="offcanvasRight" style="color: #EED297;"> <button
-                                        class="btn btn-light" style="margin-right: 1rem ; "> Sign Up </button></a>
+          <li class="nav__item">
+            <div id="app">
+              <div class="d-flex">
 
 
+                <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"><button class="btn btn-light" style="margin-right: 1rem ; ">LogIn
+                  </button></a>
+                <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                  aria-controls="offcanvasRight" style="color: #EED297;"> <button class="btn btn-light"
+                    style="margin-right: 1rem ; "> Sign Up </button></a>
 
-                                <!--------- offcanvas ---------->
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
 
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="d-lg-flex half">
-                                            <div class="container">
-                                                <div class="row align-items-center justify-content-center">
-                                                    <div>
-                                                        <div class="mb-4">
-                                                            <h3>Sign In</h3>
-                                                        </div>
-                                                        <form action="#" method="post" @submit.prevent="login">
-                                                            <div class="form-group first">
-                                                                <label for="username">Email</label>
-                                                                <input v-model="email" type="email" class="form-control"
-                                                                    id="exampleInputEmail1"
-                                                                    aria-describedby="emailHelp">
-                                                            </div>
-                                                            <div class="form-group last mb-3">
-                                                                <label for="password">Password</label>
-                                                                <input v-model="password" type="password"
-                                                                    class="form-control" id="exampleInputPassword1">
-                                                            </div>
-                                                            <div class="d-flex mb-5 align-items-center">
-                                                                <label class="control control--checkbox mb-0"><span
-                                                                        class="caption">Remember me</span>
-                                                                    <input type="checkbox" checked="checked" />
-                                                                    <div class="control__indicator"></div>
-                                                                </label>
-                                                            </div>
-                                                            <div class="d-flex justify-content-center">
-                                                                <input type="submit" value="Log In"
-                                                                    class="btn btn-block btn-primary">
-                                                                <a href="#" data-bs-toggle="offcanvas"
-                                                                    data-bs-target="#offcanvas"
-                                                                    aria-controls="offcanvasRight"><input type=""
-                                                                        value="Register"
-                                                                        class="btn btn-block btn-danger"></a>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <!--------- offcanvas ---------->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-lg-flex half">
+                      <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                          <div>
+                            <div class="mb-4">
+                              <h3>Sign In</h3>
                             </div>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
-                                aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <div class="d-lg-flex half">
-                                        <div class="container">
-                                            <div class="row align-items-center justify-content-center">
-                                                <div>
-                                                    <div class="mb-4">
-                                                        <h3>Register</h3>
-                                                    </div>
-                                                    <form action="#" method="post" @submit.prevent="registerForm">
-                                                        <div class="form-group first">
-                                                            <label for="username">First Name</label>
-                                                            <input v-model="firstName" type="text" class="form-control"
-                                                                id="exampleInputPassword1" required>
-                                                        </div>
-                                                        <div class="form-group last">
-                                                            <label for="username">Last Name</label>
-                                                            <input v-model="lastName" type="text" class="form-control"
-                                                                id="exampleInputPassword1" required>
-                                                        </div>
-                                                        <div class="form-group first">
-                                                            <label for="username">Email</label>
-                                                            <input v-model="email" type="email" class="form-control"
-                                                                id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                                required>
-                                                        </div>
-                                                        <div class="form-group last mb-3">
-                                                            <label for="password">Password</label>
-                                                            <input v-model="password" type="password"
-                                                                class="form-control" id="exampleInputPassword1"
-                                                                required>
-                                                        </div>
-                                                        <div class="d-flex justify-content-center">
-                                                            <input type="submit" value="Register"
-                                                                class="btn btn-block btn-danger">
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <form action="#" method="post" @submit.prevent="login">
+                              <div class="form-group first">
+                                <label for="username">Email</label>
+                                <input v-model="email" type="email" class="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp">
+                              </div>
+                              <div class="form-group last mb-3">
+                                <label for="password">Password</label>
+                                <input v-model="password" type="password" class="form-control"
+                                  id="exampleInputPassword1">
+                              </div>
+                              <div class="d-flex mb-5 align-items-center">
+                                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                                  <input type="checkbox" checked="checked" />
+                                  <div class="control__indicator"></div>
+                                </label>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                                  aria-controls="offcanvasRight"><input type="" value="Register"
+                                    class="btn btn-block btn-danger"></a>
+                              </div>
+                            </form>
+                          </div>
                         </div>
-                    </li>
-
-                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div>
-
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--========== HOME ==========-->
-
-        <section class="home" id="home">
-
-            <div class="home__container  bd-grid">
-
-
-                <div class="home__data">
-                    <div class="home__datatitle">
-                        <img src="./assets/img/brandmark-design.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="d-lg-flex half">
+                    <div class="container">
+                      <div class="row align-items-center justify-content-center">
                         <div>
-                            <h1 class="home__title">HOSHIN</h1>
-                            <h1 class="home__subtitle">Academy</h1>
+                          <div class="mb-4">
+                            <h3>Register</h3>
+                          </div>
+                          <form action="#" method="post" @submit.prevent="registerForm">
+                            <div class="form-group first">
+                              <label for="username">First Name</label>
+                              <input v-model="firstName" type="text" class="form-control" id="exampleInputPassword1"
+                                required>
+                            </div>
+                            <div class="form-group last">
+                              <label for="username">Last Name</label>
+                              <input v-model="lastName" type="text" class="form-control" id="exampleInputPassword1"
+                                required>
+                            </div>
+                            <div class="form-group first">
+                              <label for="username">Email</label>
+                              <input v-model="email" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group last mb-3">
+                              <label for="password">Password</label>
+                              <input v-model="password" type="password" class="form-control" id="exampleInputPassword1"
+                                required>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                              <input type="submit" value="Register" class="btn btn-block btn-danger">
+                            </div>
+                          </form>
                         </div>
-
+                      </div>
                     </div>
-                    <div class="home__desc">
-                        <p class="home__description">Aprenda a programar creando ideas para el mundo real</p>
-                        <a href="#" class="button">Empecemos</a>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </li>
 
-        <!--========== SHARE ==========-->
-        <section class="share section bd-container" id="share">
-            <div class="share__container bd-grid">
-                <div class="share__data">
-                    <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
-                    <p class="share__description">Sharing these holidays is the best gift you can give, give a present
-                        or share your love with the people you love the most and celebrate with great happiness.</p>
-                    <a href="#" class="button">Send a Gift</a>
-                </div>
+          <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+        </ul>
+      </div>
 
-                <div class="share__img">
-                    <img src="assets/img/shared.png" alt="">
-                </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== HOME ==========-->
+
+    <section class="home" id="home">
+
+      <div class="home__container  bd-grid">
+
+
+        <div class="home__data">
+          <div >
+            <div class="home__datatitle">
+              <img src="./assets/img/brandmark-design.png" alt="">
+              <div>
+                <h1 class="home__title">HOSHIN</h1>
+                <h2><span class="home__subtitle typed"></span></h2>
+
+
+              </div>
             </div>
-        </section>
-
-        <!--========== DECORATION ==========-->
-        <section class="decoration section bd-container" id="decoration">
-            <h2 class="section-title">Elija su recorrido de aprendizaje </h2>
-            <div class="decoration__container bd-grid">
-                <div class="decoration__data">
-                    <img src="./assets/img/logo_java.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">JAVA</h3>
-                    <div class="d-flex flex-column">
-                        <p class="button button-link">Más de 30 proyectos
-                        </p>
-                        <p class="button button-link">
-                            Más de 260 temas
-                        </p>
-                        <p class="button button-link">
-                            Más de 180 horas
-                        </p>
-                    </div>
-                </div>
-
-                <div class="decoration__data">
-                    <img src="assets/img/decoration2.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Christmas Candies</h3>
-                    <a href="#" class="button button-link">Go Shopping</a>
-                </div>
-
-                <div class="decoration__data">
-                    <img src="assets/img/decoration3.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Christmas Trees</h3>
-                    <a href="#" class="button button-link">Go Shopping</a>
-                </div>
+            <div class="home__desc">
+              <p class="home__description">Aprenda a programar creando ideas para el mundo real</p>
+              <a href="#" class="button">Empecemos</a>
             </div>
-        </section>
+          </div>
+        </div>
+    </section>
 
-        <!--========== ACCESSORIES ==========-->
-        <section class="accessory section bd-container" id="accessory">
-            <h2 class="section-title">New Christmas <br> Accessories</h2>
-
-            <div class="accessory__container bd-grid">
-                <div class="accessory__content">
-                    <img src="assets/img/accessory1.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Snow Globe</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$9.45</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
-                </div>
-
-                <div class="accessory__content">
-                    <img src="assets/img/accessory2.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Candy</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$2.52</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
-                </div>
-
-                <div class="accessory__content">
-                    <img src="assets/img/accessory3.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Angel</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$13.15</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
-                </div>
-
-                <div class="accessory__content">
-                    <img src="assets/img/accessory4.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Sphere</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$4.25</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
-                </div>
-
-                <div class="accessory__content">
-                    <img src="assets/img/accessory5.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Surprise gift</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$7.99</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!--========== SEND GIFT ==========-->
-        <section class="send section">
-            <div class="send__container bd-container bd-grid">
-                <div class="send__content">
-                    <h2 class="section-title-center send__title">Send Gift Now</h2>
-                    <p class="send__description">Start giving away before the holidays are over. Write the home address
-                        of the person who will send the gift.</p>
-                    <form action="">
-                        <div class="send__direction">
-                            <input type="text" placeholder="House address" class="send__input">
-                            <a href="#" class="button">Send</a>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="send__img">
-                    <img src="assets/img/send.png" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!--========== FOOTER ==========-->
-    <footer class="footer section">
-        <div class="footer__container bd-container bd-grid">
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    <a href="#" class="footer__logo">Christmas Gift</a>
-                </h3>
-                <p class="footer__description">I sent a gift and it gives <br> happiness</p>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Our Services</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Pricing </a></li>
-                    <li><a href="#" class="footer__link">Discounts</a></li>
-                    <li><a href="#" class="footer__link">Shipping mode</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Our Company</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Blog</a></li>
-                    <li><a href="#" class="footer__link">About us</a></li>
-                    <li><a href="#" class="footer__link">Our mision</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Social</h3>
-                <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
-            </div>
+    <!--========== SHARE ==========-->
+    <section class="share section bd-container" id="share">
+      <div class="share__container bd-grid">
+        <div class="share__data">
+          <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+          <p class="share__description">Sharing these holidays is the best gift you can give, give a present
+            or share your love with the people you love the most and celebrate with great happiness.</p>
+          <a href="#" class="button">Send a Gift</a>
         </div>
 
-        <p class="footer__copy">&#169; 2021 Bedimcode. All right reserved</p>
-    </footer>
+        <div class="share__img">
+          <img src="assets/img/shared.png" alt="">
+        </div>
+      </div>
+    </section>
 
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--========== DECORATION ==========-->
+    <section class="decoration section bd-container" id="decoration">
+      <h2 class="section-title">Elija su recorrido de aprendizaje </h2>
+      <div class="decoration__container bd-grid">
+        <div class="decoration__data">
+          <img src="./assets/img/logo_java.png" alt="" class="decoration__img">
+          <h3 class="decoration__title">JAVA</h3>
+          <div class="d-flex flex-column">
+            <p class="button button-link">Más de 30 proyectos
+            </p>
+            <p class="button button-link">
+              Más de 260 temas
+            </p>
+            <p class="button button-link">
+              Más de 180 horas
+            </p>
+          </div>
+        </div>
 
-    <!--========== Bootstrap ==========-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+        <div class="decoration__data">
+          <img src="assets/img/decoration2.png" alt="" class="decoration__img">
+          <h3 class="decoration__title">Christmas Candies</h3>
+          <a href="#" class="button button-link">Go Shopping</a>
+        </div>
 
-    <!--========== AXIOS ==========-->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <div class="decoration__data">
+          <img src="assets/img/decoration3.png" alt="" class="decoration__img">
+          <h3 class="decoration__title">Christmas Trees</h3>
+          <a href="#" class="button button-link">Go Shopping</a>
+        </div>
+      </div>
+    </section>
 
-    <!--========== VUE ==========-->
-    <script src="https://unpkg.com/vue@3"></script>
+    <!--========== ACCESSORIES ==========-->
+    <section class="accessory section bd-container" id="accessory">
+      <h2 class="section-title">New Christmas <br> Accessories</h2>
 
-    <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
+      <div class="accessory__container bd-grid">
+        <div class="accessory__content">
+          <img src="assets/img/accessory1.png" alt="" class="accessory__img">
+          <h3 class="accessory__title">Snow Globe</h3>
+          <span class="accessory__category">Accessory</span>
+          <span class="accessory__preci">$9.45</span>
+          <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+          <img src="assets/img/accessory2.png" alt="" class="accessory__img">
+          <h3 class="accessory__title">Candy</h3>
+          <span class="accessory__category">Accessory</span>
+          <span class="accessory__preci">$2.52</span>
+          <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+          <img src="assets/img/accessory3.png" alt="" class="accessory__img">
+          <h3 class="accessory__title">Angel</h3>
+          <span class="accessory__category">Accessory</span>
+          <span class="accessory__preci">$13.15</span>
+          <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+          <img src="assets/img/accessory4.png" alt="" class="accessory__img">
+          <h3 class="accessory__title">Sphere</h3>
+          <span class="accessory__category">Accessory</span>
+          <span class="accessory__preci">$4.25</span>
+          <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+
+        <div class="accessory__content">
+          <img src="assets/img/accessory5.png" alt="" class="accessory__img">
+          <h3 class="accessory__title">Surprise gift</h3>
+          <span class="accessory__category">Accessory</span>
+          <span class="accessory__preci">$7.99</span>
+          <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--========== SEND GIFT ==========-->
+    <section class="send section">
+      <div class="send__container bd-container bd-grid">
+        <div class="send__content">
+          <h2 class="section-title-center send__title">Send Gift Now</h2>
+          <p class="send__description">Start giving away before the holidays are over. Write the home address
+            of the person who will send the gift.</p>
+          <form action="">
+            <div class="send__direction">
+              <input type="text" placeholder="House address" class="send__input">
+              <a href="#" class="button">Send</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="send__img">
+          <img src="assets/img/send.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section">
+    <div class="footer__container bd-container bd-grid">
+      <div class="footer__content">
+        <h3 class="footer__title">
+          <a href="#" class="footer__logo">Christmas Gift</a>
+        </h3>
+        <p class="footer__description">I sent a gift and it gives <br> happiness</p>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Our Services</h3>
+        <ul>
+          <li><a href="#" class="footer__link">Pricing </a></li>
+          <li><a href="#" class="footer__link">Discounts</a></li>
+          <li><a href="#" class="footer__link">Shipping mode</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Our Company</h3>
+        <ul>
+          <li><a href="#" class="footer__link">Blog</a></li>
+          <li><a href="#" class="footer__link">About us</a></li>
+          <li><a href="#" class="footer__link">Our mision</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Social</h3>
+        <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+      </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2021 Bedimcode. All right reserved</p>
+  </footer>
+
+  <!--========== SCROLL REVEAL ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--========== AUTO TYPING ==========-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  <!--========== Bootstrap ==========-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!--========== AXIOS ==========-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!--========== VUE ==========-->
+  <script src="https://unpkg.com/vue@3"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

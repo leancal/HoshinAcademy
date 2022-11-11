@@ -117,9 +117,9 @@ sr.reveal(`.share__data, .send__img`, {
 const typed = new Typed('.typed', {
 	strings: [
 		'<i >Academy</i>',
-		'<i >Futuro</i>',
-		'<i >Educación</i>',
-		'<i >Pez</i>'
+		'<i >Future</i>',
+		'<i >Education</i>',
+		'<i >Code</i>'
 	],
 
 	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.

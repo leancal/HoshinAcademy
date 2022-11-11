@@ -1,3 +1,4 @@
+
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -6,8 +7,8 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #DA2535;
-  --first-color-alt: #C42130;
+  --first-color: #96b4de;
+  --first-color-alt: #5d82a7;
   --first-color-send: #DE3B49;
   --title-color: #161212;
   --text-color: #5B5757;
@@ -290,6 +291,9 @@ img{
   align-items: center;
 }
 
+.home__datatitle img{
+  width: 32rem;
+}
 
 .home__svgimg{
   filter: drop-shadow(0px 5px 10px rgba(190, 186, 186, 0.164));
@@ -307,10 +311,10 @@ img{
 }
 
 .home__desc{
-  margin-left: 119px;
+  margin-left: 103px;
 }
 .home__description{
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   margin-bottom: var(--mb-3);
 }
 

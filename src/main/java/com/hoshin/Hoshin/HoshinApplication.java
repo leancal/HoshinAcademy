@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import static java.lang.Boolean.FALSE;
+
 @SpringBootApplication
 public class HoshinApplication {
 
@@ -22,7 +24,7 @@ public class HoshinApplication {
 	@Bean
 	public CommandLineRunner initData(ClienteRepositorio clienteRepositorio ) {
 		return args -> {
-			cliente client1= new cliente("Melba","Morel", "MelbaMorel@gmail.com",contraseñaEncriptada.encode("perro"));
+			cliente client1= new cliente("Melba","Morel", "MelbaMorel@gmail.com",contraseñaEncriptada.encode("perro"),FALSE);
 			clienteRepositorio.save(client1);
 
 

@@ -23,10 +23,10 @@ public class autorizacion extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests() // si quito esta linea TODOS SE AUTORIZAN( no hay restricciones/seguridad)
 
-                .antMatchers("/rest/**", "/h2-console/**", "/admin/**").hasAuthority("ADMIN")
-                .antMatchers(  "/web/accounts.html", "/web/account.html","/web/cards.html", "/web/create-cards.html", "/web/transfers.html", "/web/loan-application.html" ).hasAnyAuthority("CLIENT", "ADMIN")
-                .antMatchers(HttpMethod.POST, " /api/clientes").hasAnyAuthority("CLIENT", "ADMIN")
-                .antMatchers( "web/index.html", "/web/register.html").permitAll();
+                .antMatchers("/rest/**", "/h2-console/**", "/index/**").hasAuthority("ADMIN")
+                .antMatchers("/pagoYkyc.html", "/improvisado.html").hasAuthority("CLIENTE")
+                .antMatchers(HttpMethod.POST, " /api/clientes" ).hasAnyAuthority("CLIENTE", "ADMIN")
+                .antMatchers("/index.html", "/register.html" , "/login.html").permitAll();
 
 
         http.formLogin()

@@ -23,16 +23,19 @@ public class cliente {
 
     private String contraseña;
 
+    private Boolean kyc;
+
 
     public cliente(){
 
     }
 
-    public cliente( String primerNombre, String apellido, String email, String contraseña) {
+    public cliente( String primerNombre, String apellido, String email, String contraseña, Boolean kyc) {
         this.primerNombre = primerNombre;
         this.apellido = apellido;
         this.email = email;
         this.contraseña = contraseña;
+        this.kyc = kyc;
     }
 
 
@@ -71,6 +74,15 @@ public class cliente {
 
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
+    }
+
+
+    public Boolean getKyc() {
+        return kyc;
+    }
+
+    public void setKyc(Boolean kyc) {
+        this.kyc = kyc;
     }
 
 

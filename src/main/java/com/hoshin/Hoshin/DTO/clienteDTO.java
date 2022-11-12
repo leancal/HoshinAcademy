@@ -12,6 +12,8 @@ public class clienteDTO {
     private String apellido;
     private String email;
 
+    private Boolean kyc;
+
     public clienteDTO() {
     }
 
@@ -20,6 +22,7 @@ public class clienteDTO {
         this.primerNombre = cliente.getPrimerNombre();
         this.apellido = cliente.getApellido();
         this.email = cliente.getEmail();
+        this.kyc = cliente.getKyc();
     }
 
     public Long getId() {
@@ -38,5 +41,7 @@ public class clienteDTO {
         return email;
     }
 
-
+    public Boolean getKyc() {
+        return kyc;
+    }
 }

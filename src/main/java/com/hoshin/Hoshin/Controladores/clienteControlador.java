@@ -3,15 +3,17 @@ package com.hoshin.Hoshin.Controladores;
 
 import com.hoshin.Hoshin.DTO.clienteDTO;
 import com.hoshin.Hoshin.models.cliente;
-import com.hoshin.Hoshin.servicios.serviciosCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
+
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 @RestController
 public class clienteControlador {
@@ -64,13 +66,30 @@ public class clienteControlador {
 
         }
 
-        cliente nuevoCliente = new cliente(primerNombre, apellido, email, contraseñaEncriptada.encode(contraseña));
+        cliente nuevoCliente = new cliente(primerNombre, apellido, email, contraseñaEncriptada.encode(contraseña), FALSE);
         serviciosCliente.guardarCliente(nuevoCliente);
 
         return new ResponseEntity<>( HttpStatus.CREATED);
 
     }
 
+    @PatchMapping("/api/clientes/current")
+
+    public ResponseEntity<?> desactivarBoton( Authentication authentication
+    ){
+
+        cliente clienteautenticado = serviciosCliente.findByEmail(authentication.getName());
+
+        if(clienteautenticado != null){
+
+            clienteautenticado.setKyc(TRUE);
+        }
+
+        serviciosCliente.guardarCliente(clienteautenticado);
+
+
+        return new ResponseEntity<>("cambio hecho", HttpStatus.CREATED);
+    }
 
 
 }

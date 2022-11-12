@@ -1,3 +1,9 @@
+
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -111,6 +117,8 @@ sr.reveal(`.share__img, .send__content`, {
 sr.reveal(`.share__data, .send__img`, {
     origin: 'right'
 })
+
+
 
 /*==================== AUTO TYPING ====================*/
 

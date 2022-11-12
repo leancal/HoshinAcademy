@@ -17,11 +17,11 @@ const app = Vue.createApp({
     methods: {
 
 
-    desactivarBoton(){
+//     desactivarBoton(){
 
-        localStorage.setItem("habilitado", "true")
-        window.location.href="/improvisado.html"
-},
+//         localStorage.setItem("habilitado", "true")
+//         window.location.href="/improvisado.html"
+// },
 
 
   

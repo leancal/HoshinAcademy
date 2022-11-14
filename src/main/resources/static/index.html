@@ -37,28 +37,26 @@
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-          <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
-          <li class="nav__item"><a href="#decoration" class="nav__link">Decorations</a></li>
-          <li class="nav__item"><a href="#accessory" class="nav__link">Accessory</a></li>
+          <li class="nav__item fst-italic fs-5"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item fst-italic fs-5"><a href="#share" class="nav__link">Reseñas</a></li>
+          <li class="nav__item fst-italic fs-5"><a href="#decoration" class="nav__link">Cursos</a></li>
+          <li class="nav__item fst-italic fs-5"><a href="#accessory" class="nav__link">Asesoria</a></li>
 
           <li class="nav__item">
             <div id="app">
               <div class="d-flex">
 
 
-                <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                <!-- <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"><button class="btn btn-light" style="margin-right: 1rem ; ">LogIn
                   </button></a>
                 <a href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
                   aria-controls="offcanvasRight" style="color: #EED297;"> <button class="btn btn-light"
-                    style="margin-right: 1rem ; "> Sign Up </button></a>
-
-
+                    style="margin-right: 1rem ; "> Sign Up </button></a> -->
 
                 <!--------- offcanvas ---------->
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                   aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
 
@@ -101,9 +99,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasRightLabel">
+              <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -145,7 +143,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </li>
 
@@ -175,17 +173,26 @@
               <div>
                 <h1 class="home__title">HOSHIN</h1>
                 <h2><span class="home__subtitle typed"></span></h2>
-
-
-              </div>
+              </div>  
             </div>
+
             <div class="home__desc">
               <p class="home__description">Aprenda a programar creando ideas para el mundo real</p>
               <a href="#" class="button">Empecemos</a>
             </div>
           </div>
         </div>
+
     </section>
+
+  <div class="home__contador"> 
+      <p class="home__description">¡Somos de confianza!</p>
+      <p class="fs-3">Muchas personas se encuentran satisfechas</p>
+      <p class="fs-3">con nuestros servicios a tal punto</p>
+      <p class="fs-3">de siempre elegirnos para programar</p>
+    </div>
+</div>
+
 
     <!--========== SHARE ==========-->
     <section class="share section bd-container" id="share">
@@ -193,22 +200,22 @@
         <div class="share__data">
           <div class="login-container">
             <div class="profile-img"></div>
-            <h1>
-              Maddie
+            <h1 class="ms-5 fs-2">
+              Juan Perez
             </h1>
-            <div class="description">
-              Maddie is a front end web developer in New York. She has worked in the field for 10 years now. Check out her projects in the links below. She is available for hire as well.
+            <div class="description mt-5">
+              "En lo personal he aprendido JAVA a la perfeccion con Hoshin Academy, tal es asi que hoy en dia puedo gozar de un buen empleo a tiempo completo, lo recomiendo al 100%"
             </div>
           </div>
         </div>
         <div class="share__data">
           <div class="login-container">
             <div class="profile-img"></div>
-            <h1>
-              Maddie
+            <h1 class="ms-5 fs-2">
+              Natalia Gomez
             </h1>
-            <div class="description">
-              Maddie is a front end web developer in New York. She has worked in the field for 10 years now. Check out her projects in the links below. She is available for hire as well.
+            <div class="description mt-5">
+              "Con Hoshin Academy pude probar lo que verdaderamente se siente estar en el mundo laboral , gracias a sus grandes horas dedicadas a simular un ambiente laboral"
             </div>
           </div>
         </div>
@@ -216,11 +223,11 @@
         <div class="share__img">
           <div class="login-container">
             <div class="profile-img"></div>
-            <h1>
-              Maddie
+            <h1 class="ms-5 fs-2">
+              Leandro puto
             </h1>
-            <div class="description">
-              Maddie is a front end web developer in New York. She has worked in the field for 10 years now. Check out her projects in the links below. She is available for hire as well.
+            <div class="description mt-5">
+            "En lo personal he aprendido Phyton y me ha ido de 10, pude insertar muchas cosas del curso para mi empleo de hoy en dia. Eso es algo que destaco, se aprende rapido"
             </div>
           </div>
         </div>
@@ -233,11 +240,14 @@
       <div class="decoration__container bd-grid">
         <div class="decoration__data">
           <img src="./assets/img/logo_java.png" alt="" class="decoration__img">
-          <h3 class="decoration__title">JAVA</h3>
+          <h3 class="decoration__title">JAVA HoshinAcademy</h3>
+          <p class="fst-italic fw-bold mt-3">Horarios de Cursada:</p>
+          <p class="fst-italic fw-semibold mt-3">De 9hs(arg) a 15hs</p>
           <div class="d-flex flex-column">
             <p><a href="#" data-toggle="modal" data-target="#javamodal1"
-              class="btn animated fadeIn btn-cta btn-cstm-light">Contenido del curso</a></p>
+              class="btn animated fadeIn btn-cta btn-cstm-light fst-italic mt-4">Contenido del curso</a></p>
           </div>
+          
         </div>
          <!-- Modal -->
          <div class="modal fade auto-off" id="javamodal1" tabindex="-1" role="dialog" aria-labelledby="demoModal"
@@ -267,7 +277,7 @@
                    </svg>
 
                    <div class="card__content">
-                     <h3 class="card__title text-center">CONTENIDO DEL CURSO</h3>
+                     <h3 class="card__title text-center fst-italic ">CONTENIDO DEL CURSO</h3>
                      <div class="container__">
                        <div class="card__">
                          <h4>Conceptos</h4>
@@ -302,6 +312,7 @@
                        <div class="card__">
                          <h4>Eventos, XML y JSON</h4>
                        </div>
+                       <button class="botonModal">¡Comprar ahora!</button>
                      </div>
                    </div>
                    
@@ -311,14 +322,17 @@
            </div>
          </div>
        </div>
+         
        <!-- End Modal -->
 
         <div class="decoration__data">
           <img src="./assets/img/logo_java.png" alt="" class="decoration__img">
-          <h3 class="decoration__title">JAVA</h3>
+          <h3 class="decoration__title">JAVA 2 HoshinAcademy</h3>
+          <p class="fst-italic fw-bold mt-3">Horarios de Cursada:</p>
+          <p class="fst-italic fw-semibold mt-3">De 9hs(arg) a 15hs</p>
           <div class="d-flex flex-column">
             <p><a href="#" data-toggle="modal" data-target="#javamodal"
-              class="btn animated fadeIn btn-cta btn-cstm-light">Contenido del curso</a></p>
+              class="btn animated fadeIn btn-cta btn-cstm-light fst-italic mt-4">Contenido del curso</a></p>
           </div>
         </div>
         <!-- Modal -->
@@ -349,7 +363,7 @@
                     </svg>
 
                     <div class="card__content">
-                      <h3 class="card__title text-center">CONTENIDO DEL CURSO</h3>
+                      <h3 class="card__title text-center fst-italic">CONTENIDO DEL CURSO</h3>
                       <div class="container__">
                         <div class="card__">
                           <h4>Introducción</h4>
@@ -384,6 +398,7 @@
                         <div class="card__">
                           <h4>Creación de proyectos</h4>
                         </div>
+                        <button class="botonModal">¡Comprar ahora!</button>
                       </div>
                     </div>
                     
@@ -397,10 +412,12 @@
 
         <div class="decoration__data">
           <img src="./assets/img/logo_python.png" alt="" class="decoration__img">
-          <h3 class="decoration__title">Python</h3>
+          <h3 class="decoration__title mt-3">Python 1 HoshinAcademy</h3>
+          <p class="fst-italic fw-bold mt-3">Horarios de Cursada:</p>
+          <p class="fst-italic fw-semibold mt-3">De 9hs(arg) a 15hs</p>
 
           <p><a href="#" data-toggle="modal" data-target="#demoModalph"
-              class="btn animated fadeIn btn-cta btn-cstm-light">Contenido del curso</a></p>
+              class="btn animated fadeIn btn-cta btn-cstm-light fst-italic mt-4">Contenido del curso</a></p>
         </div>
         <!-- Modal -->
         <div class="modal fade auto-off" id="demoModalph" tabindex="-1" role="dialog" aria-labelledby="demoModal"
@@ -430,7 +447,7 @@
                     </svg>
 
                     <div class="card__content">
-                      <h3 class="card__title text-center">CONTENIDO DEL CURSO</h3>
+                      <h3 class="card__title text-center fst-italic">CONTENIDO DEL CURSO</h3>
                       <div class="container__">
                         <div class="card__">
                           <h4>Introducción a Python</h4>
@@ -465,6 +482,7 @@
                         <div class="card__">
                           <h4>Bases de datos</h4>
                         </div>
+                        <button class="botonModal">¡Comprar ahora!</button>
                       </div>
                     </div>
                     
@@ -478,9 +496,11 @@
 
         <div class="decoration__data">
           <img src="./assets/img/logo_python.png" alt="" class="decoration__img">
-          <h3 class="decoration__title">Python</h3>
+          <h3 class="decoration__title mt-3">Python 2 HoshinAcademy</h3>
+          <p class="fst-italic fw-bold mt-3">Horarios de Cursada:</p>
+          <p class="fst-italic fw-semibold mt-3">De 9hs(arg) a 15hs</p>
           <p><a href="#" data-toggle="modal" data-target="#pythonAv"
-            class="btn animated fadeIn btn-cta btn-cstm-light">Contenido del curso</a></p>
+            class="btn animated fadeIn btn-cta btn-cstm-light fst-italic mt-4">Contenido del curso</a></p>
         </div>
          <!-- Modal -->
          <div class="modal fade auto-off" id="pythonAv" tabindex="-1" role="dialog" aria-labelledby="demoModal"
@@ -510,7 +530,7 @@
                    </svg>
 
                    <div class="card__content">
-                     <h3 class="card__title text-center">CONTENIDO DEL CURSO</h3>
+                     <h3 class="card__title text-cente fst-italicr">CONTENIDO DEL CURSO</h3>
                      <div class="container__">
                        <div class="card__">
                          <h4>Patrones de desarrollo</h4>
@@ -530,6 +550,7 @@
                        <div class="card__">
                          <h4>Asyncio</h4>
                        </div>
+                       <button class="botonModal">¡Comprar ahora!</button>
                      </div>
                      
                    </div>
@@ -546,7 +567,8 @@
 
     <!--========== ACCESSORIES ==========-->
     <section class="accessory section bd-container" id="accessory">
-      <h2 class="section-title">New Christmas <br> Accessories</h2>
+      <h2 class="section-title">¡Proximamente!</h2>
+      <h3 class="section-title">Remeras y Accesorios</h3>
 
       <div class="accessory__container bd-grid">
         <div class="accessory__content">
@@ -595,62 +617,62 @@
     <section class="send section">
       <div class="send__container bd-container bd-grid">
         <div class="send__content">
-          <h2 class="section-title-center send__title">Send Gift Now</h2>
-          <p class="send__description">Start giving away before the holidays are over. Write the home address
-            of the person who will send the gift.</p>
+          <h2 class="section-title-center send__title">¡Compre su curso ahora!</h2>
+          <p class="send__description fst-italic">En Hoshin Academy nos ocupamos al 100% en que vos aprendas y puedas salir con todas las herramientas posibles al mercado laboral</p>
           <form action="">
             <div class="send__direction">
-              <input type="text" placeholder="House address" class="send__input">
-              <a href="#" class="button">Send</a>
+              <input type="text" placeholder="Ingrese su mail" class="send__input">
+              <a href="#" class="button">Registrarse</a>
             </div>
           </form>
         </div>
 
-        <div class="send__img">
+        <!-- <div class="send__img">
           <img src="assets/img/send.png" alt="">
-        </div>
+        </div> -->
       </div>
     </section>
   </main>
 
-  <!--========== FOOTER ==========-->
-  <footer class="footer section">
-    <div class="footer__container bd-container bd-grid">
-      <div class="footer__content">
-        <h3 class="footer__title">
-          <a href="#" class="footer__logo">Christmas Gift</a>
-        </h3>
-        <p class="footer__description">I sent a gift and it gives <br> happiness</p>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Our Services</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Pricing </a></li>
-          <li><a href="#" class="footer__link">Discounts</a></li>
-          <li><a href="#" class="footer__link">Shipping mode</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Our Company</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Blog</a></li>
-          <li><a href="#" class="footer__link">About us</a></li>
-          <li><a href="#" class="footer__link">Our mision</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
-        <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
-        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-        <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
-      </div>
+ <!--========== FOOTER ==========-->
+ <footer class="footer section">
+  <div class="footer__container bd-container bd-grid">
+    <div class="footer__content">
+      <h3 class="footer__title">
+        <a href="#" class="footer__logo fs-5 fst-italic fw-semibold">Hoshin Academy</a>
+      </h3>
+      <p class="footer__description">En Hoshin Academy nos ocupamos de que</p>
+      <p>se aprenda al 100%</p>
     </div>
 
-    <p class="footer__copy">&#169; 2021 Bedimcode. All right reserved</p>
-  </footer>
+    <div class="footer__content">
+      <h3 class="footer__title fs-5 fst-italic fw-semibold">Nuestros servicios</h3>
+      <ul>
+        <li><a href="#" class="footer__link">Diseño web </a></li>
+        <li><a href="#" class="footer__link">Desarrollo</a></li>
+        <li><a href="#" class="footer__link">Software</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h3 class="footer__title fs-5 fst-italic fw-semibold">Sobre nosotros</h3>
+      <ul>
+        <li><a href="#" class="footer__link">Nuestra empresa</a></li>
+        <li><a href="#" class="footer__link">Nuestro equipo</a></li>
+        <li><a href="#" class="footer__link">Carreras disponibles</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h3 class="footer__title">Nuestras redes sociales</h3>
+      <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+      <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+      <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+    </div>
+  </div>
+
+  <p class="footer__copy">&#169; 2022 Hoshin Academy. Todos los derechos reservados</p>
+</footer>
 
   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>

@@ -14,6 +14,7 @@
   --text-color-light: #8F8A8A;
   --body-color: #FEFBFB;
   --container-color: #FFF;
+  --box-border: 1px solid #5b575733;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -67,6 +68,7 @@ body.dark-theme{
   --text-color: #D1C7C8;
   --body-color: #1d002d;
   --container-color: #96b4de;
+  --box-border: 1px solid #e1e1e15d;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -392,7 +394,7 @@ img{
   text-align: center;
   font-size: 8em;
   font-family: var(--body-font);
-  color: var(--first-color);
+  color:var(--title-color);
   position: absolute;
   transform: rotate(-180deg);
   mix-blend-mode: screen;
@@ -410,6 +412,19 @@ img{
   width: 100%;
   background-color: rgb(2, 5, 190);
 } */
+
+.count__students {
+  margin: 119px 0px 0 0;
+  max-height: 10rem;
+  border:var(--box-border);
+  padding: 1rem 1rem 2rem;
+  box-shadow:  2px 6px rgba(218, 214, 214, 0.15);
+  border-radius: 1rem;
+}
+.count__students p{
+  font-size: large;
+  color: var(--title-color);
+}
 
 
 /*========== USER COMMENTS ==========*/

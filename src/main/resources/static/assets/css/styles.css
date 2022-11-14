@@ -376,6 +376,42 @@ img{
   justify-self: center;
 }
 
+/*========== COUNTUP ==========*/
+
+.contador {
+  height: 155px;
+  width: 320px;
+  transform: rotate(180deg);
+  margin: 200px 100px;
+  position: relative;
+}
+
+.numero {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 8em;
+  font-family: var(--body-font);
+  color: var(--first-color);
+  position: absolute;
+  transform: rotate(-180deg);
+  mix-blend-mode: screen;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .color_fondo {
+  transition: 0.2s;
+  transform-origin: bottom;
+  position: absolute;
+  display: block;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(2, 5, 190);
+} */
+
+
 /*========== USER COMMENTS ==========*/
 
 .login-container {

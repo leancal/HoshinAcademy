@@ -93,7 +93,21 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   line-height: 1.6;
+  overflow: overlay;
 }
+
+::-webkit-scrollbar{
+  background: transparent;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-image: url(../img/logoo.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
 
 h1,
 h2,

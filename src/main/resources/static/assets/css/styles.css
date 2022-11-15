@@ -67,7 +67,7 @@ html {
 body.dark-theme {
   --first-color-send: #5d82a7;
   --title-color: rgb(240, 228, 228);
-  --text-color: #d1c7c8;
+  --text-color: white;
   --body-color: #1d002d;
   --container-color: #96b4de;
   --box-border: 1px solid #e1e1e15d;
@@ -1520,6 +1520,22 @@ img {
     filter: blur(0);
   }
 }
+
+/* REMERAS */
+
+.accessory__container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgApp{
+  border-radius: 2rem;
+}
+
+.imgCurso{
+
+}
+
 
 /*========== CARD IN CARD ==========*/
 

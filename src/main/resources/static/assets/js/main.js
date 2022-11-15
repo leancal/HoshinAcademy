@@ -158,3 +158,6 @@ let tiempo=setInterval(() => {
         clearInterval(tiempo)
     }
 }, 2);
+
+
+

@@ -514,6 +514,17 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+/* VIDEO */
+
+.video{
+  margin-top: 5rem;
+}
+
+
+.textoVideo{
+ display: flex;
+}
+
 /*========== ACCESSORIES ==========*/
 .accessory__container {
   grid-template-columns: repeat(2, 1fr);

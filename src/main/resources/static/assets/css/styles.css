@@ -96,18 +96,15 @@ body {
   overflow: overlay;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: transparent;
 }
-
-
 
 ::-webkit-scrollbar-thumb {
   background-image: url(../img/logoo.png);
   background-repeat: no-repeat;
   background-size: 20px;
 }
-
 
 h1,
 h2,
@@ -492,6 +489,9 @@ img {
 }
 
 .decoration__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   padding: 1rem 1rem 2rem;
   background-color: var(--container-color);
@@ -504,7 +504,9 @@ img {
 }
 
 .decoration__img {
-  width: 180px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
 }
 
 .decoration__title {
@@ -610,30 +612,29 @@ img {
 
 .container__product .card__product .imgBx {
   width: 270px;
-    height: 270px;
-    overflow: hidden;
-    position: relative;
-    top: 50%;
-    transform: translate(9%, -75%);
-    transition: 0.5s;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translate(9%, -75%);
+  transition: 0.5s;
 }
 
 .container__product .card__product:hover .imgBx {
-  
   top: -10%;
   transform: scale(0.6) translate(12%, 0%);
 }
 
 .container__product .card__product .imgBx img {
-  position:absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-    border-radius: 10px;
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  border-radius: 10px;
 }
 
 .container__product .card__product .contentBx {

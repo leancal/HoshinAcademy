@@ -215,6 +215,10 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
 .nav__logo:hover {
   color: var(--first-color);
@@ -1465,6 +1469,10 @@ img {
   .demo-sidebar {
     flex: 1;
   }
+  .VideoEstilo {
+    width: 40rem;
+    height: 30rem;
+}
 }
 
 /*========== CARD MODAL ==========*/
@@ -1627,6 +1635,10 @@ img {
     box-shadow: 0 2px 6px rgb(65 11 16 / 15%);
     border-radius: 1rem;
   }
+  .nav__link{
+    font-size: 15px;
+}
+  
 }
 
 @media screen and (min-width: 576px) {
@@ -1658,6 +1670,9 @@ img {
   .share__img {
     order: -1;
   }
+  .nav__link{
+    font-size: 10x;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -1683,9 +1698,9 @@ img {
     margin-bottom: 0;
   }
 
-  .nav__toggle {
-    display: none;
-  }
+  .nav__link{
+    font-size: 10x;
+}
 
   .change-theme {
     position: initial;
@@ -1697,6 +1712,8 @@ img {
   }
 
   .share__container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 2rem;
   }
 
@@ -1732,12 +1749,16 @@ img {
     padding: 2rem;
     border-radius: 1.5rem;
   }
+  
 }
 
 @media screen and (min-width: 968px) {
   .bd-container {
     margin-left: auto;
     margin-right: auto;
+  }
+  .nav__toggle {
+    display: none;
   }
 
   .home__img,
@@ -1754,7 +1775,7 @@ img {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 
   .nav__list {
@@ -1807,10 +1828,7 @@ img {
   display: flex;
 }
 .home {
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: 0rem;
-  background-position: 0;
+  background-position: 4rem -50rem;
 }
 
 .button {
@@ -1848,12 +1866,12 @@ img {
 
 
 
-.VideoEstilo{
+/* .VideoEstilo{
 
   width: 50rem;
   height: 30rem;
   
-}
+} */
 
 .VideoEstilo source{
   border-radius: 10px;

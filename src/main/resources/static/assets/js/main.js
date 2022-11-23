@@ -154,7 +154,7 @@ let tiempo=setInterval(() => {
     cantidad+=1
     color.style.height=`${cantidad}%`
     numero.textContent=cantidad
-    if(cantidad===1780  ){
+    if(cantidad===425  ){
         clearInterval(tiempo)
     }
 }, 2);

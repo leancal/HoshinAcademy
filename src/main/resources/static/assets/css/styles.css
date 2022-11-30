@@ -1709,15 +1709,11 @@ img {
 }
 
 @media screen and (min-width: 500px) {
-
   .nav__list {
     display: flex;
     align-items: center;
     margin-left: 4rem;
   }
-
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -2310,6 +2306,14 @@ img {
     cursor: pointer;
   }
 
+  .contador {
+    height: 170px;
+    width: 305px;
+    transform: rotate(180deg);
+    margin: 206px 229px;
+    position: relative;
+  }
+
   .home__datatitle {
     display: flex;
     align-items: center;
@@ -2376,13 +2380,15 @@ img {
   }
 
   .count__students {
+    display: flex;
+    width: 26rem;
     margin: 119px 0px 0 0;
-    max-width: 24rem;
     max-height: 10rem;
     border: var(--box-border);
     padding: 1rem 1rem 2rem;
     box-shadow: 2px 6px 13px rgb(218 214 214 / 10%);
     border-radius: 1rem;
+    justify-content: space-around;
   }
   .count__students p {
     font-size: 15px;
@@ -2701,84 +2707,84 @@ img {
   }
 }
 
-
 @media screen and (max-width: 1030px) {
-
   .decoration__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
   }
 }
 
+@media screen and (max-width: 429px) {
+  .home__title {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
 
-@media screen and (min-width: 429px) {
-
-
-.home__title {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-.home__subtitle {
+  .home__subtitle {
     font-size: 3rem;
     margin-top: -31px;
     font-weight: var(--font-bold);
-}
+  }
 
-.home__datatitle img {
-  width: 11rem;
-}
+  .home__datatitle img {
+    width: 11rem;
+  }
 
-.home__description {
-  font-size: 1.4rem;
-  margin-bottom: var(--mb-3);
-}
+  .home__description {
+    font-size: 1.4rem;
+    margin-bottom: var(--mb-3);
+  }
 
-.count__students {
-  margin: 119px 0px 0 0;
-  max-height: 10rem;
-  border: var(--box-border);
-  padding: 1rem 1rem 2rem;
-  box-shadow: 2px 6px 13px rgb(218 214 214 / 10%);
-  border-radius: 1rem;
-}
+  .count__students {
+    margin: 119px 0px 0 0;
+    max-height: 10rem;
+    border: var(--box-border);
+    padding: 1rem 1rem 2rem;
+    box-shadow: 2px 6px 13px rgb(218 214 214 / 10%);
+    border-radius: 1rem;
+  }
 
-.count__students p {
-  font-size: large;
-  color: var(--title-color);
-  margin-left: 15rem;
-}
+  .count__students p {
+    font-size: large;
+    color: var(--title-color);
+    margin-left: 15rem;
+  }
 
+  .numero {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-family: var(--body-font);
+    color: var(--title-color);
+    position: absolute;
+    transform: rotate(-180deg);
+    mix-blend-mode: screen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14rem;
+  }
 
-.numero {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  font-size: 6rem;
-  font-family: var(--body-font);
-  color: var(--title-color);
-  position: absolute;
-  transform: rotate(-180deg);
-  mix-blend-mode: screen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 14rem;
-}
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
 
-.nav__list {
-  display: flex;
-  align-items: center;
-}
+  .nav__item {
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+  .nav__link {
+    font-size: 0.8rem;
+    margin-top: 10rem;
+  }
 
-.nav__item {
-  margin-left: var(--mb-4);
-  margin-bottom: 0;
-}
-.nav__link {
-  font-size: 0.8rem;
-  margin-top: 10rem;
-}
-
+  .share__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }

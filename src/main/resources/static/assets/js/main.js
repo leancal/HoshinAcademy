@@ -154,7 +154,7 @@ let tiempo=setInterval(() => {
     cantidad+=1
     color.style.height=`${cantidad}%`
     numero.textContent=cantidad
-    if(cantidad===425  ){
+    if(cantidad===550  ){
         clearInterval(tiempo)
     }
 }, 2);
@@ -169,6 +169,11 @@ window.setTimeout("scrolltitle()",500);
 }
 scrolltitle();
 
+/*==================== Modal ====================*/
+
+  
+
+  
 
 
 

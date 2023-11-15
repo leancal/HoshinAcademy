@@ -135,6 +135,16 @@ img {
   height: auto;
 }
 
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 999; /* Asegura que el tooltip esté en la parte superior */
+}
+
+
 /*========== CLASS CSS ==========*/
 .section {
   padding: 4rem 0 2rem;
@@ -173,6 +183,11 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+
+/* .imagenCarac{
+  width: 20px;
+  height: 20px;
+} */
 
 /*========== NAV ==========*/
 .nav {
@@ -557,6 +572,11 @@ img {
   font-size: 1.4rem;
 }
 
+.textCarac{
+  display: flex;
+  font-size: 1.4rem;
+}
+
 .VideoEstilo {
   width: 50rem;
   height: 30rem;
@@ -925,6 +945,27 @@ img {
   border: 0;
   border-radius: 3px;
   background: transparent;
+}
+
+.modal .modal-contentR {
+  margin-left: 28rem;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+}
+
+
+.modal .closeR {
+  position: absolute;
+  z-index: 1;
+  right: -399px !important;
+  top: 35px !important;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: rgba(193, 193, 193, 0.3) !important;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 0;
 }
 
 .modal.fade.modal-top-left .modal-dialog {
@@ -1542,6 +1583,12 @@ img {
 .card__image {
   width: 100%;
   max-height: 20rem;
+  opacity: 0;
+  animation: ImageFadeIn 0.8s 1.4s forwards;
+}
+
+.card__imageContent {
+  width: 100%;
   opacity: 0;
   animation: ImageFadeIn 0.8s 1.4s forwards;
 }
@@ -2325,6 +2372,12 @@ img {
     font-size: 1.1rem;
     margin-left: 2rem;
   }
+
+  .textCarac{
+    display: flex;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2334,6 +2387,12 @@ img {
     background-size: 125rem;
     background-position: 30rem -50rem;
     margin-right: 1rem;
+  }
+  
+  .imagenCarac{
+    width: 13rem;
+    height: 17rem;
+    margin-right: 14rem;
   }
 
   .nav__list {
@@ -2647,6 +2706,12 @@ img {
     font-size: 1rem;
     margin-left: 2rem;
   }
+
+  .textCarac {
+    font-size: 0.7rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -2654,6 +2719,12 @@ img {
     margin-left: -25px;
     margin-bottom: 10px;
     position: relative;
+  }
+
+  .imagenCarac{
+    width: 11rem;
+    height: 16rem;
+    margin-right: 11rem;
   }
 
   .container__1 {
@@ -2711,6 +2782,19 @@ img {
     margin-top: 10rem;
   }
 
+  .imagenCarac{
+    width: 10rem;
+    height: 15rem;
+    margin-right: 11rem;
+  }
+
+  .textCarac{
+    display: flex;
+    font-size: 0.6rem;
+    margin-left: 1rem;
+  }
+
+
   .count__students {
     margin: 119px 0px 0 0;
     max-width: 19rem;
@@ -2746,6 +2830,7 @@ img {
     font-size: 0.8rem;
     margin-left: 1rem;
   }
+
 
   .container__ .card__ h4 {
     text-align: center;
